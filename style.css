@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Inter Regular';
+    src: url(fontes/Inter-Regular.ttf) format('truetype');}
+@font-face{
+    font-family: 'Inter Semi Bold';
+    src: url(fontes/Inter-SemiBold.ttf) format('truetype');}
+@font-face{
+    font-family: 'Inter Bold';
+    src: url(fontes/Inter-Bold.ttf) format('truetype');}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #DB3A34;
+    box-shadow: 0px 1px 10px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: white;
+    font-family: 'Inter Regular';
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-item a{
+    font-family: 'Inter Regular';
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:white;
+}
+
+.sacola button{
+    background-color: transparent;
+    border: none;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .sacola{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        width: 50px;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+    }
+
+    .mobile-menu{
+        background-color: #495057;
+    }
+
+    .mobile-menu li{
+        border-bottom: 1px solid white;
+        padding: 15px;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .sacola{
+        display: block;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .open{
+        display: block;
+    }
+
+}
