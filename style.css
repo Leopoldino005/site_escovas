@@ -13,11 +13,13 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 header{
     background-color: #DB3A34;
-    box-shadow: 0px 1px 10px;
+    box-shadow: 0px 3px 10px;
+    width: 100%;
 }
 
 .nav-bar{
@@ -66,6 +68,11 @@ header{
 .sacola button{
     background-color: transparent;
     border: none;
+}
+
+.sacola:hover{
+    background-color: #780000;
+    border-radius: 15%;
 }
 
 .mobile-menu-icon{
@@ -127,8 +134,86 @@ header{
         text-align: center;
     }
 
+    .mobile-menu .sacola:hover{
+        background-color: #6c757d;
+        border-radius: 0;
+    }
+
     .open{
         display: block;
     }
 
+    .img1{
+        width: 50%;
+        margin-left: 100%;
+    }
+
+}
+
+.frame01{
+    background-color: #FAF9F9;
+}
+
+.frame01 h1{
+    font-family: 'Inter Semi Bold';
+    font-size: 6.4vw;
+
+    position: absolute;
+    margin-left: 26%;
+    margin-top: 13%;
+}
+
+.frame01 h2{
+    font-family: 'Inter Semi Bold';
+    font-size: 6.4vw;
+
+    position: absolute;
+    margin-left: 26%;
+    margin-top: 20%;
+}
+
+.frame01 button{
+    background-color: #E7D7C1;
+    border: none;
+    border-radius: 12px;
+
+    width: 33%;
+    margin-left: 6%;
+    margin-bottom: 5%;
+}
+
+.frame01 p{
+    padding: 8px;
+    font-size: 3.8vw;
+    font-family: 'Inter Semi Bold';
+    color: #2196F3;
+}
+
+.frame02{
+    background-color: #E3F2FD;
+}
+
+.frame02 h1{
+    font-family: 'Inter Semi Bold';
+    font-size: 6.4vw;
+    color: #0D47A1;
+    
+    padding-top: 2%;
+    text-align: center;
+}
+
+.frame02 p{
+    text-align: center;
+    font-size: 3.8vw;
+    font-family: 'Inter Semi Bold';
+    color: #2196F3;
+}
+
+.frame03{
+    background-color: #FDFFFC;
+}
+
+.frame03 img{
+    width: 55%;
+    margin-left: 45%;
 }
